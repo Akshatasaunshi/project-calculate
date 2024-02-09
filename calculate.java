@@ -1,4 +1,4 @@
-public class calculate
+class calculate
 {
     public int add(int a,int b)
     {
@@ -16,6 +16,14 @@ public class calculate
     {
         return a/b;
     }
+    public double sqr(double a)
+    {
+        return a*a;
+    }
+    public double tri(double b,double h)
+    {
+        return 0.5*b*h;
+    }
 }
 class result
 {
@@ -25,5 +33,7 @@ class result
         System.out.println("Substraction="+c.sub(7,3));
         System.out.println("Multiplication="+c.multi(5,3));
         System.out.println("Division="+c.div(10,5));
+        System.out.println("Area of square="+c.sqr(4));
+        System.out.println("Area of triangle="+c.tri(4,5));
     }
 }

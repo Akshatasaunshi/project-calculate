@@ -1,29 +1,41 @@
-public class calculate1
-{
-    public int add(int a,int b)
-    {
-        return a+b;
+
+class calculate1 extends area{
+    void add(){
+        int a = 10;
+        int b = 20;
+        int res = a+b;
+        System.out.println("Addition "+res);
     }
-    public int sub(int a,int b)
-    {
-        return a-b;
+    void substract(){
+        int a = 10;
+        int b = 20;
+        int diff = a-b;
+        System.out.println("Substraction "+diff);
     }
-    public int multi(int a,int b)
-    {
-        return a*b;
+    void multi(){
+        int a = 10;
+        int b = 20;
+        int pro = a *b;
+        System.out.println("product "+pro);
     }
-    public int div(int a,int b)
-    {
-        return a/b;
+    void division(){
+        int a = 10;
+        int b = 20;
+        int div = a/b;
+        System.out.println("division "+div);
     }
-}
-class result
-{
     public static void main(String args[]){
+       // System.out.println("Enter two numbers");
+        //Scanner s=new Scanner(System.in);
+        //int a=s.nextInt();
+        //int b=s.nextInt();
+        
         calculate1 c=new calculate1();
-        System.out.println("Addition="+c.add(5,3));
-        System.out.println("Substraction="+c.sub(7,3));
-        System.out.println("Multiplication="+c.multi(5,3));
-        System.out.println("Division="+c.div(10,5));
+        c.add();
+        c.substract();
+        c.multi();
+        c.division();
+        System.out.println("area of square is "+c.sq_area(3));
+        System.out.println("area of triangle is "+c.tri_area(4,5));
     }
 }

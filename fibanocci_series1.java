@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class fibanocci_series {
+public class fibanocci_series1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
