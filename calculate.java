@@ -16,9 +16,7 @@ public class calculate
     {
         return a/b;
     }
-}
-class result
-{
+
     public static void main(String args[]){
         calculate c=new calculate();
         System.out.println("Addition="+c.add(5,3));
